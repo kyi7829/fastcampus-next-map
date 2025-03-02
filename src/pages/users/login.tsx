@@ -37,7 +37,7 @@ export default function LoginPage() {
                     <div className="flex flex-col gap-2">
                         <button
                             type="button"
-                            onClick={() => signIn("google")}
+                            onClick={() => signIn("google", { callbackUrl: "/" })}
                             className="text-white relative group flex bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:ring-[#4285F4]/50 font-medium rounded-lg w-full px-5 py-4 text-center items-center justify-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2"
                         >
               <span className="absolute inset-y-0 left-0 flex items-center pl-4">
@@ -47,7 +47,7 @@ export default function LoginPage() {
                         </button>
                         <button
                             type="button"
-                            onClick={() => signIn("naver")}
+                            onClick={() => signIn("naver", { callbackUrl: "/" })}
                             className="text-white relative group flex bg-[#2db400] hover:bg-[#2db400]/90 focus:ring-4 focus:ring-[#2db400]/50 font-medium rounded-lg w-full px-5 py-4 text-center items-center justify-center dark:focus:ring-[#2db400]/55 mr-2 mb-2"
                         >
               <span className="absolute inset-y-0 left-0 flex items-center pl-4">
@@ -57,7 +57,7 @@ export default function LoginPage() {
                         </button>
                         <button
                             type="button"
-                            onClick={() => signIn("kakao")}
+                            onClick={() => signIn("kakao", { callbackUrl: "/" })}
                             className="text-black relative group flex bg-[#fef01b] hover:bg-[#fef01b]/90 focus:ring-4 focus:ring-[#fef01b]/50 font-medium rounded-lg w-full px-5 py-4 text-center items-center justify-center dark:focus:ring-[#fef01b]/55 mr-2 mb-2"
                         >
               <span className="absolute inset-y-0 left-0 flex items-center pl-4">
